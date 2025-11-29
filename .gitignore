@@ -1,0 +1,29 @@
+# --- 虛擬環境 (Virtual Environments) ---
+# 這是最重要的一步，確保你的 venv 資料夾不會被上傳
+venv/
+.venv/
+env/
+ENV/
+class_rag/
+
+# --- Python 編譯檔與快取 (Byte-compiled / Optimized / DLL files) ---
+# 這些是 Python 自動產生的檔案，不需要上傳
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- 敏感資料 (Environment Variables) ---
+# 如果你有使用 .env 檔案儲存密碼或 API Key，絕對不能上傳！
+.env
+.env.local
+
+# --- 作業系統產生的檔案 (OS Files) ---
+# Mac 和 Windows 自動產生的縮圖或設定檔
+.DS_Store
+Thumbs.db
+
+# --- 編輯器設定 (IDE / Editor) ---
+# 如果不想把個人的編輯器設定傳上去（VS Code, PyCharm）
+.vscode/
+.idea/
