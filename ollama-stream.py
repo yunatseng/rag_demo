@@ -68,7 +68,7 @@ while True:
         print("客服結束，祝您順心！")
         break
 
-    # 2. 存使用者的話 (用 'U')
+    # 2. 存使用者的話 (用 'USER')
     add_msg(memories, 'USER', user_input)
 
     # 呼叫模型
@@ -78,5 +78,5 @@ while True:
     answer = response.message.content
     print("客服回答：", answer)
 
-    # 3. 存 AI 的話 (用 'A')
+    # 3. 存 AI 的話 (用 'AI')
     add_msg(memories, 'AI', answer)
